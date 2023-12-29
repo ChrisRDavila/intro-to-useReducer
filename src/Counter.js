@@ -21,7 +21,8 @@ function reducer(state, action) {
       default:
         throw new Error(`There is no action type matching ${action.type}.`);
   }
-}
+}  
+
 
 function Counter() {
   const [state, dispatch] = useReducer(reducer, initialState);
